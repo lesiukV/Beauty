@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+
+.header {
+    background-color: #E5E5E5;
+    color: #333333;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 17px 0px 16px 0px;
+    color: #333333;
+}
+
+.nav__link {
+    margin: 0px 15px
+}
+
+.lower_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.logo_beauty {
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    color: #F13C6E;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 21px;
+}
+
+.input {
+    width: 250px;
+    height: 40px;
+    margin-left: 172px;
+
+    background: #EFEFEF;
+    border-radius: 40px;
+    margin-top: 21px;
+    border: 0px;
+}
+
+.number {
+    width: 127px;
+    height: 19px;
+    margin-left: 93px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 33px;
+}
+
+.button {
+    margin-left: 40px;
+
+    width: 170px;
+    height: 40px;
+
+    background: #FFFFFF;
+
+    border: 2px solid #F13C6E;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+    margin-top: 21px;
+}
+
+.lower_header__link {
+    margin: 70px 20px 30px 20px;
+    color: #000000
+}
+
+.intro {
+    background-image: url("../pictures/intro.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.button_intro {
+    width: 170px;
+    height: 40px;
+    margin-left: 400px;
+    margin-bottom: 173px;
+
+    background: #F13C6E;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    color: white;
+}
+
+h2 {
+    padding: 192px 0px 50px 400px;
+
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #FFFFFF;
+}
+
+.description {
+    color: #FFFFFF;
+    padding-left: 400px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+section {
+    background-color: #E5E5E5;
+    padding: 80px 400px 0px 400px;
+}
+
+
+
+.special_promotion_title {
+    padding-bottom: 38px;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: block;
+    background-color: #fff;
+    width: 255px;
+    height: 373px;
+    margin: 5px
+}
+
+.chair {
+    margin: 25px 0px 20px 0px;
+    align-self: center;
+    max-width: 125px;
+}
+
+.buy_button {
+    align-self: center;
+    width: 130px;
+    height: 35px;
+    background: #F13C6E;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.price {
+    margin: 20px 0px;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+
+}
+
+.chair__description {
+    align-self: center;
+}
+
+.subscribe,
+.shops {
+    display: block;
+    width: 540px;
+    height: 212px;
+    background-color: #F13C6E;
+    display: flex;
+    justify-content: space-between;
+}
+
+#flex_container {
+    margin: 100px 0px;
+}
+
+.subscribe__email {
+    width: 225px;
+    height: 35px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 0;
+    margin: 25px 0px 35px;
+}
+
+.shops__button {
+    width: 170px;
+    height: 35px;
+
+    background: #F13C6E;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: white;
+    margin: 25px 0px 35px;
+}
+
+
+.subscribe__description,
+.shops__description {
+    color: #fff;
+    flex-direction: column;
+    margin: 0px 40px;
+}
+
+h5 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.logo_email {
+    max-width: 140px;
+    max-height: 123px;
+    margin: 52.73px 45px 52.73px 0px;
+}
+
+.logo_shops {
+    max-width: 188.67px;
+    max-height: 100px;
+    margin: 56px 45.33px 56px 0px;
+}
+
+#flex_container_impuls{
+    background: #fff;
+}
+
+.impuls {
+    width: 149px;
+height: 49px;   
+    padding: 35px 60px;
+}
+
+#watched_recently {
+    margin-top: 80px;
+}
