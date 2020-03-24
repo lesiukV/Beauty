@@ -5,9 +5,13 @@
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
+    color: #828282;
 }
 
+a:visited {
+    color: #828282;
+}
 
 .header {
     background-color: #E5E5E5;
@@ -62,7 +66,7 @@ a {
 
 .number {
     width: 127px;
-    height: 19px;
+    height: 25px;
     margin-left: 93px;
     font-style: normal;
     font-weight: normal;
@@ -255,16 +259,107 @@ h5 {
     margin: 56px 45.33px 56px 0px;
 }
 
-#flex_container_impuls{
+#flex_container_impuls {
     background: #fff;
 }
 
 .impuls {
     width: 149px;
-height: 49px;   
+    height: 49px;
     padding: 35px 60px;
 }
 
 #watched_recently {
     margin-top: 80px;
+}
+
+#watched_recently_container {
+    padding-bottom: 80px;
+}
+
+footer {
+    background: #fff;
+    padding: 0px 400px;
+}
+
+hr {
+    margin-bottom: 30px;
+    width: 255px;
+    height: 0px;
+
+    border: 1px solid #EFEFEF;
+}
+
+li {
+    list-style-type: none;
+    font-size: 12px;
+    line-height: 28px;
+    color: #828282;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+.popular_categories_title {
+    font-size: 16px;
+    line-height: 140.62%;
+    margin-bottom: 30px;
+
+    color: #000000;
+}
+
+
+
+.address {
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+.network_logo {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+
+.social_networks {
+    display: flex;
+}
+
+.footer_nav, .contact_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_info > .number {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.contact_info > .button {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.copyright_and_politics {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0px 400px 0px 400px;
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #828282;
+
+    background: #E5E5E5;
+}
+
+.copyright_and_politics_item {
+    padding: 25px 0px 25px 0px;
 }
