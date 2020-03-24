@@ -141,8 +141,6 @@ section {
     padding: 80px 400px 0px 400px;
 }
 
-
-
 .special_promotion_title {
     padding-bottom: 38px;
 }
@@ -190,7 +188,6 @@ section {
     letter-spacing: 0.05em;
 
     color: #000000;
-
 }
 
 .chair__description {
@@ -202,9 +199,14 @@ section {
     display: block;
     width: 540px;
     height: 212px;
+
+    min-width: 532px;
+
     background-color: #F13C6E;
     display: flex;
     justify-content: space-between;
+    
+    margin-bottom: 25px;
 }
 
 #flex_container {
@@ -302,7 +304,6 @@ ul {
     padding-left: 0;
 }
 
-
 .popular_categories_title {
     font-size: 16px;
     line-height: 140.62%;
@@ -310,8 +311,6 @@ ul {
 
     color: #000000;
 }
-
-
 
 .address {
     font-size: 14px;
@@ -363,3 +362,41 @@ ul {
 .copyright_and_politics_item {
     padding: 25px 0px 25px 0px;
 }
+
+
+@media only screen and (max-width: 1800px) {
+    section, footer, .copyright_and_politics {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    section, footer, .copyright_and_politics {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    section, footer, .copyright_and_politics {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    section, footer, .copyright_and_politics {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    h2, .description {
+        padding-left: 100px;
+    }
+
+    .button_intro {
+        margin-left: 100px;
+    }
+}
+
