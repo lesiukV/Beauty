@@ -13,6 +13,10 @@ a:visited {
     color: #828282;
 }
 
+button {
+    border: none;
+}
+
 .header {
     background-color: #E5E5E5;
     color: #333333;
@@ -52,7 +56,7 @@ a:visited {
     letter-spacing: 0.1em;
 
     color: #F13C6E;
-    
+
     font-weight: bold;
     margin-left: 20px;
     margin-top: 21px;
@@ -71,7 +75,7 @@ a:visited {
 }
 
 .number {
-    width: 127px;
+    min-width: 130px;
     height: 25px;
     margin-left: 93px;
     font-style: normal;
@@ -80,6 +84,7 @@ a:visited {
     line-height: 19px;
     color: #000000;
     margin-top: 33px;
+
 }
 
 .button {
@@ -124,7 +129,7 @@ a:visited {
 
     box-sizing: border-box;
     border-radius: 40px;
-    
+
 }
 
 h2 {
@@ -218,7 +223,7 @@ section {
 
     display: flex;
     justify-content: space-between;
-    
+
     margin-bottom: 25px;
 }
 
@@ -247,7 +252,7 @@ section {
 
     box-sizing: border-box;
     border-radius: 30px;
-    
+
     margin: 25px 0px 35px;
 }
 
@@ -349,19 +354,19 @@ ul {
     display: flex;
 }
 
-.footer_nav, .contact_info {
+.footer_nav,
+.contact_info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact_info > .number {
+.contact_info>.number {
     margin-top: 0;
     padding-top: 0;
-    min-width: 127px;
 }
 
-.contact_info > .button {
+.contact_info>.button {
     margin-top: 0;
     padding-top: 0;
 }
@@ -386,33 +391,46 @@ ul {
 
 
 @media only screen and (max-width: 1800px) {
-    section, footer, .copyright_and_politics {
+
+    section,
+    footer,
+    .copyright_and_politics {
         padding-left: 300px;
         padding-right: 300px;
     }
 }
 
 @media only screen and (max-width: 1600px) {
-    section, footer, .copyright_and_politics {
+
+    section,
+    footer,
+    .copyright_and_politics {
         padding-left: 200px;
         padding-right: 200px;
     }
 }
 
 @media only screen and (max-width: 1500px) {
-    section, footer, .copyright_and_politics {
+
+    section,
+    footer,
+    .copyright_and_politics {
         padding-left: 100px;
         padding-right: 100px;
     }
 }
 
 @media only screen and (max-width: 1500px) {
-    section, footer, .copyright_and_politics {
+
+    section,
+    footer,
+    .copyright_and_politics {
         padding-left: 10px;
         padding-right: 10px;
     }
-    
-    h2, .description {
+
+    h2,
+    .description {
         padding-left: 100px;
     }
 
@@ -421,20 +439,32 @@ ul {
     }
 
     .input {
-       margin-left: 100px;
+        margin-left: 100px;
     }
 
-    .lower_header, .footer_nav {
+    .lower_header,
+    .footer_nav {
         flex-wrap: wrap;
     }
 }
 
 @media only screen and (max-width: 560px) {
+
+    h2,
+    .description {
+        padding-left: 50px;
+    }
+
+    .button_intro {
+        margin-left: 50px;
+    }
+
     .impuls {
         padding: 35px 30px;
     }
 
-    .logo_email, .logo_shops {
+    .logo_email,
+    .logo_shops {
         display: none;
     }
 
@@ -452,10 +482,20 @@ ul {
 
     #politicts {
         text-align: right;
-    }   
-    
-    .flex_container {
+        margin-left: 10px;
+    }
+
+    .flex_container,
+    .subscribe__description,
+    .shops__description {
         justify-content: center;
     }
-}
 
+    h3 {
+        text-align: center;
+    }
+
+    .item {
+        flex-grow: 1;
+    }
+}
