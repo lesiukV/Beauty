@@ -72,6 +72,17 @@ button {
     border-radius: 40px;
     margin-top: 21px;
     border: 0px;
+    
+    background-image: url(../pictures/search.png);
+    background-repeat: no-repeat;
+    text-indent: 50px;
+    background-position: 20px 10px; 
+}
+
+.lower_header__call {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .number {
@@ -178,7 +189,7 @@ section {
 
     width: 255px;
     height: 373px;
-    margin: 5px
+   
 }
 
 .chair {
@@ -240,6 +251,7 @@ section {
     border-radius: 30px;
     border: 0;
     margin: 25px 0px 35px;
+    text-indent: 20px;
 }
 
 .shops__button {
@@ -398,6 +410,10 @@ ul {
         padding-left: 300px;
         padding-right: 300px;
     }
+
+    .item {
+        margin: 10px;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -417,16 +433,6 @@ ul {
     .copyright_and_politics {
         padding-left: 100px;
         padding-right: 100px;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-
-    section,
-    footer,
-    .copyright_and_politics {
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     h2,
@@ -448,6 +454,15 @@ ul {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+
+    section,
+    footer,
+    .copyright_and_politics {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 @media only screen and (max-width: 560px) {
 
     h2,
@@ -473,7 +488,7 @@ ul {
     }
 
     hr {
-        width: 100px;
+        width: 200px;
     }
 
     .contact_info {
@@ -495,7 +510,16 @@ ul {
         text-align: center;
     }
 
-    .item {
+    section .item {
         flex-grow: 1;
     }
+
+    .address {
+        margin: 30px 100px 30px 10px
+    }
+
+    .input {
+        margin-left: 0px;
+    }
+    
 }
