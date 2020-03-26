@@ -10,41 +10,37 @@
 </head>
 
 <body>
-    <div class="header">
-        <header>
-            <nav class="header__nav">
-                <div class="nav__container">
-                    <a class="nav__link" href="#">Доставка</a>
-                    <a class="nav__link" href="#">Оплата</a>
-                    <a class="nav__link" href="#">Отзывы</a>
-                    <a class="nav__link" href="#">Вопрос - ответ</a>
-                    <a class="nav__link" href="#">Контакты</a>
-                </div>
-            </nav>
-        </header>
-    </div>
-
-    <div class="lower_header">
-        <div class="lower_header">
-            <div class="logo"><img src="pictures/logo.png" alt="Beauty logo"></div>
-            <h1 class="logo_beauty">BEAUTY</h1>
-            <form>
-                <input class="input" type="search" placeholder="">
-            </form>
-            <div class="lower_header__call">
-                <div class="number">8 (812) 123-45-67</div>
-                <button class="button">Обратный звонок</button>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav__container">
+                <a class="nav__link" href="#">Доставка</a>
+                <a class="nav__link" href="#">Оплата</a>
+                <a class="nav__link" href="#">Отзывы</a>
+                <a class="nav__link" href="#">Вопрос - ответ</a>
+                <a class="nav__link" href="#">Контакты</a>
             </div>
+        </nav>
+    </header>
+
+    <div class="lower-header">
+        <div class="lower-header__logo"><img src="pictures/logo.png" alt="Beauty logo"></div>
+        <h1 class="lower-header__beauty">BEAUTY</h1>
+        <form>
+            <input class="input" type="search" placeholder="">
+        </form>
+        <div class="lower-header__call">
+            <number class="number">8 (812) 123-45-67</number>
+            <button class="button">Обратный звонок</button>
         </div>
     </div>
 
-    <nav class="lower_header">
-        <a class="lower_header__link" href="">Парикмахерская</a>
-        <a class="lower_header__link" href="">Барбершоп</a>
-        <a class="lower_header__link" href="">Маникюр</a>
-        <a class="lower_header__link" href="">Педикюр</a>
-        <a class="lower_header__link" href="">Массаж</a>
-        <a class="lower_header__link" href="">Мебель</a>
+    <nav class="lower-header" id="lower-header">
+        <a class="lower-header__link" href="">Парикмахерская</a>
+        <a class="lower-header__link" href="">Барбершоп</a>
+        <a class="lower-header__link" href="">Маникюр</a>
+        <a class="lower-header__link" href="">Педикюр</a>
+        <a class="lower-header__link" href="">Массаж</a>
+        <a class="lower-header__link" href="">Мебель</a>
     </nav>
 
     <div class="intro">
@@ -54,54 +50,54 @@
             <br />
             болтовню, поэтому внимательнее
         </p>
-        <button class="button_intro">Подробнее</button>
+        <button class="button-intro">Подробнее</button>
     </div>
 
     <section>
-        <h3 class="special_promotion_title">Специальные предложения</h3>
-        <div class="flex_container">
+        <h3 class="special-promotion-title">Специальные предложения</h3>
+        <div class="flex-container">
             <div class="item">
-                <div class="item_flex">
+                <div class="item-flex">
                     <img class="chair" src="pictures/chair.png" alt="chair">
                     <p class="chair__description">Парикмахерское кресло<br />
                         «Норм» гидравлическое</p>
                     <h4 class="price">9 900 &#8381; </h4>
-                    <button class="buy_button">Купить</button>
+                    <button class="buy-button">Купить</button>
                 </div>
             </div>
 
             <div class="item">
-                <div class="item_flex">
+                <div class="item-flex">
                     <img class="chair" src="pictures/chair.png" alt="chair">
                     <p class="chair__description">Парикмахерское кресло<br />
                         «Норм» гидравлическое</p>
                     <h4 class="price">9 900 &#8381; </h4>
-                    <button class="buy_button">Купить</button>
+                    <button class="buy-button">Купить</button>
                 </div>
             </div>
 
             <div class="item">
-                <div class="item_flex">
+                <div class="item-flex">
                     <img class="chair" src="pictures/chair.png" alt="chair">
                     <p class="chair__description">Парикмахерское кресло<br />
                         «Норм» гидравлическое</p>
                     <h4 class="price">9 900 &#8381; </h4>
-                    <button class="buy_button">Купить</button>
+                    <button class="buy-button">Купить</button>
                 </div>
             </div>
 
             <div class="item">
-                <div class="item_flex">
+                <div class="item-flex">
                     <img class="chair" src="pictures/chair.png" alt="chair">
                     <p class="chair__description">Парикмахерское кресло<br />
                         «Норм» гидравлическое</p>
                     <h4 class="price">9 900 &#8381; </h4>
-                    <button class="buy_button">Купить</button>
+                    <button class="buy-button">Купить</button>
                 </div>
             </div>
         </div>
 
-        <div class="flex_container" id="flex_container">
+        <div class="flex-container" id="flex-container">
             <div class="subscribe">
                 <div class="subscribe__description">
                     <h5>Получай бонусы и подарки</h5>
@@ -111,7 +107,7 @@
                         <input class="subscribe__email" type="search" placeholder="Введите e-mail">
                     </form>
                 </div>
-                <img src="pictures/logo_email.png" class="logo_email" alt="email">
+                <img src="pictures/logo-email.png" class="logo-email" alt="email">
             </div>
 
             <div class="shops">
@@ -121,11 +117,11 @@
                         по всей России</p>
                     <button class="shops__button">Карта магазинов</button>
                 </div>
-                <img src="pictures/logo_shops.png" class="logo_shops" alt="truck">
+                <img src="pictures/logo-shops.png" class="logo-shops" alt="truck">
             </div>
         </div>
 
-        <div class="flex_container" id="flex_container_impuls">
+        <div class="flex-container" id="flex-container__impuls">
             <img class="impuls" src="pictures/impuls.png" alt="impuls">
             <img class="impuls" src="pictures/impuls.png" alt="impuls">
             <img class="impuls" src="pictures/impuls.png" alt="impuls">
@@ -140,58 +136,58 @@
             <img class="impuls" src="pictures/impuls.png" alt="impuls">
         </div>
 
-        <h3 class="special_promotion_title" id="watched_recently">Вы недавно смотрели</h3>
-        <div class="flex_container" id="watched_recently_container">
+        <h3 class="special-promotion-title" id="watched-recently">Вы недавно смотрели</h3>
+        <div class="flex-container" id="watched-recently__container">
             <div class="item">
-                <div class="item_flex">
+                <div class="item-flex">
                     <img class="chair" src="pictures/chair.png" alt="chair">
                     <p class="chair__description">Парикмахерское кресло<br />
                         «Норм» гидравлическое</p>
                     <h4 class="price">9 900 &#8381; </h4>
-                    <button class="buy_button">Купить</button>
+                    <button class="buy-button">Купить</button>
                 </div>
             </div>
 
             <div class="item">
-                <div class="item_flex">
+                <div class="item-flex">
                     <img class="chair" src="pictures/chair.png" alt="chair">
                     <p class="chair__description">Парикмахерское кресло<br />
                         «Норм» гидравлическое</p>
                     <h4 class="price">9 900 &#8381; </h4>
-                    <button class="buy_button">Купить</button>
+                    <button class="buy-button">Купить</button>
                 </div>
             </div>
 
             <div class="item">
-                <div class="item_flex">
+                <div class="item-flex">
                     <img class="chair" src="pictures/chair.png" alt="chair">
                     <p class="chair__description">Парикмахерское кресло<br />
                         «Норм» гидравлическое</p>
                     <h4 class="price">9 900 &#8381; </h4>
-                    <button class="buy_button">Купить</button>
+                    <button class="buy-button">Купить</button>
                 </div>
             </div>
 
             <div class="item">
-                <div class="item_flex">
+                <div class="item-flex">
                     <img class="chair" src="pictures/chair.png" alt="chair">
                     <p class="chair__description">Парикмахерское кресло<br />
                         «Норм» гидравлическое</p>
                     <h4 class="price">9 900 &#8381; </h4>
-                    <button class="buy_button">Купить</button>
+                    <button class="buy-button">Купить</button>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="flex_container">
+        <div class="flex-container">
             <div class="item">
-                <div class="item_flex">
-                    <h5 class="popular_categories_title">Популярные<br />
+                <div class="item-flex">
+                    <h5 class="popular-categories-title">Популярные<br />
                         категории</h5>
                     <hr />
-                    <ul class="nav_popular_categories">
+                    <ul class="nav-popular-categories">
                         <li><a href="">Насадки</a></li>
                         <li><a href="">Инструменты</a></li>
                         <li><a href="">Гель-лаки</a></li>
@@ -203,11 +199,11 @@
             </div>
 
             <div class="item">
-                <div class="item_flex">
-                    <h5 class="popular_categories_title">Популярные<br />
+                <div class="item-flex">
+                    <h5 class="popular-categories-title">Популярные<br />
                         категории</h5>
                     <hr />
-                    <ul class="nav_popular_categories">
+                    <ul class="nav-popular-categories">
                         <li><a href="">Насадки</a></li>
                         <li><a href="">Инструменты</a></li>
                         <li><a href="">Гель-лаки</a></li>
@@ -219,11 +215,11 @@
             </div>
 
             <div class="item">
-                <div class="item_flex">
-                    <h5 class="popular_categories_title">Популярные<br />
+                <div class="item-flex">
+                    <h5 class="popular-categories-title">Популярные<br />
                         категории</h5>
                     <hr />
-                    <ul class="nav_popular_categories">
+                    <ul class="nav-popular-categories">
                         <li><a href="">Насадки</a></li>
                         <li><a href="">Инструменты</a></li>
                         <li><a href="">Гель-лаки</a></li>
@@ -235,11 +231,11 @@
             </div>
 
             <div class="item">
-                <div class="item_flex">
-                    <h5 class="popular_categories_title">Популярные<br />
+                <div class="item-flex">
+                    <h5 class="popular-categories-title">Популярные<br />
                         категории</h5>
                     <hr />
-                    <ul class="nav_popular_categories">
+                    <ul class="nav-popular-categories">
                         <li><a href="">Насадки</a></li>
                         <li><a href="">Инструменты</a></li>
                         <li><a href="">Гель-лаки</a></li>
@@ -251,25 +247,25 @@
             </div>
         </div>
 
-        <div class="footer_nav">
-            <div class="social_networks">
-                <img class="network_logo" src="pictures/yt.jpg" alt="youtube">
-                <img class="network_logo" src="pictures/vk.jpg" alt="vk">
-                <img class="network_logo" src="pictures/fb.jpg" alt="facebook">
-                <img class="network_logo" src="pictures/inst.jpg" alt="instagram">
+        <div class="footer-nav">
+            <div class="social-networks">
+                <a class="social-network__yt"></a>
+                <a class="social-network__vk"></a>
+                <a class="social-network__fb"></a>
+                <a class="social-network__inst"></a>
             </div>
-            <div class="contact_info">
-                <div class="address">198555, Невский пр. 140, офис 140</div>
-                <div class="number">8 (812) 123-45-67</div>
+            <div class="contact-info">
+                <address class="address">198555, Невский пр. 140, офис 140</address>
+                <number class="number">8 (812) 123-45-67</number>
                 <button class="button">Обратный звонок</button>
             </div>
         </div>
     </footer>
 
-    <div class="copyright_and_politics">
-        <div class="copyright_and_politics_item">Лучший магазин (с) 2019 Все права защищены. Интернет-магазин
+    <div class="copyright-and-politics">
+        <div class="copyright-and-politics__item">Лучший магазин (с) 2019 Все права защищены. Интернет-магазин
             оборудования для салонов красоты</div>
-        <div class="copyright_and_politics_item" id="politicts">Политика конфиденциальности</div>
+        <div class="copyright-and-politics__item" id="politicts">Политика конфиденциальности</div>
     </div>
 </body>
 

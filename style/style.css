@@ -17,6 +17,12 @@ button {
     border: none;
 }
 
+address {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+}
+
 .header {
     background-color: #E5E5E5;
     color: #333333;
@@ -39,19 +45,19 @@ button {
     margin: 0px 15px
 }
 
-.lower_header {
+.lower-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo {
+.lower-header__logo {
     width: 80px;
     height: 80px;
     margin-top: 20px;
 }
 
-.logo_beauty {
+.lower-header__beauty {
     font-size: 36px;
     letter-spacing: 0.1em;
 
@@ -72,14 +78,14 @@ button {
     border-radius: 40px;
     margin-top: 21px;
     border: 0px;
-    
+
     background-image: url(../pictures/search.png);
     background-repeat: no-repeat;
     text-indent: 50px;
-    background-position: 20px 10px; 
+    background-position: 20px 10px;
 }
 
-.lower_header__call {
+.lower-header__call {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -93,9 +99,10 @@ button {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
-    margin-top: 33px;
 
+    color: #000000;
+
+    margin-top: 33px;
 }
 
 .button {
@@ -116,8 +123,12 @@ button {
     margin-top: 21px;
 }
 
-.lower_header__link {
-    margin: 70px 20px 30px 20px;
+#lower-header {
+    margin-top: 50px;
+}
+
+.lower-header__link {
+    margin: 20px 20px 30px 20px;
 
     color: #000000
 }
@@ -128,7 +139,7 @@ button {
     background-size: cover;
 }
 
-.button_intro {
+.button-intro {
     width: 170px;
     height: 40px;
     margin-left: 400px;
@@ -167,17 +178,17 @@ section {
     padding: 80px 400px 0px 400px;
 }
 
-.special_promotion_title {
+.special-promotion-title {
     padding-bottom: 38px;
 }
 
-.flex_container {
+.flex-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.item_flex {
+.item-flex {
     display: flex;
     flex-direction: column;
 }
@@ -189,7 +200,7 @@ section {
 
     width: 255px;
     height: 373px;
-   
+
 }
 
 .chair {
@@ -198,7 +209,7 @@ section {
     max-width: 125px;
 }
 
-.buy_button {
+.buy-button {
     align-self: center;
     width: 130px;
     height: 35px;
@@ -238,7 +249,7 @@ section {
     margin-bottom: 25px;
 }
 
-#flex_container {
+#flex-container {
     margin: 100px 0px;
 }
 
@@ -284,19 +295,19 @@ h5 {
     line-height: 21px;
 }
 
-.logo_email {
+.logo-email {
     max-width: 140px;
     max-height: 123px;
     margin: 52.73px 45px 52.73px 0px;
 }
 
-.logo_shops {
+.logo-shops {
     max-width: 188.67px;
     max-height: 100px;
     margin: 56px 45.33px 56px 0px;
 }
 
-#flex_container_impuls {
+#flex-container__impuls {
     background: #fff;
 }
 
@@ -306,11 +317,11 @@ h5 {
     padding: 35px 60px;
 }
 
-#watched_recently {
+#watched-recently {
     margin-top: 80px;
 }
 
-#watched_recently_container {
+#watched-recently__container {
     padding-bottom: 80px;
 }
 
@@ -341,7 +352,7 @@ ul {
     padding-left: 0;
 }
 
-.popular_categories_title {
+.popular-categories-title {
     font-size: 16px;
     line-height: 140.62%;
     margin-bottom: 30px;
@@ -356,34 +367,88 @@ ul {
     color: #000000;
 }
 
-.network_logo {
-    width: 45px;
-    height: 45px;
-    margin: 10px;
-}
-
-.social_networks {
+.social-networks {
     display: flex;
 }
 
-.footer_nav,
-.contact_info {
+.social-network__fb {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    background: url("../pictures/fb.jpg") no-repeat;
+    display: block;
+    background-size: 45px;
+
+}
+
+.social-network__fb:hover {
+    background: url("../pictures/fb-hover.jpg") no-repeat;
+    background-size: 45px;
+}
+
+.social-network__vk {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    background: url("../pictures/vk.jpg") no-repeat;
+    display: block;
+    background-size: 45px;
+
+}
+
+.social-network__vk:hover {
+    background: url("../pictures/vk-hover.jpg") no-repeat;
+    background-size: 45px;
+}
+
+.social-network__yt {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    background: url("../pictures/yt.jpg") no-repeat;
+    display: block;
+    background-size: 45px;
+
+}
+
+.social-network__yt:hover {
+    background: url("../pictures/yt-hover.jpg") no-repeat;
+    background-size: 45px;
+}
+
+.social-network__inst {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    background: url("../pictures/inst.jpg") no-repeat;
+    display: block;
+    background-size: 45px;
+
+}
+
+.social-network__inst:hover {
+    background: url("../pictures/inst-hover.jpg") no-repeat;
+    background-size: 45px;
+}
+
+.footer-nav,
+.contact-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact_info>.number {
+.contact-info>.number {
     margin-top: 0;
     padding-top: 0;
 }
 
-.contact_info>.button {
+.contact-info>.button {
     margin-top: 0;
     padding-top: 0;
 }
 
-.copyright_and_politics {
+.copyright-and-politics {
     display: flex;
     justify-content: space-between;
 
@@ -396,17 +461,45 @@ ul {
     background: #E5E5E5;
 }
 
-.copyright_and_politics_item {
+.copyright-and-politics__item {
     padding: 25px 0px 25px 0px;
 }
 
+a:hover {
+    color: #F13C6E;
+    transition: 0.2s ease-out;
+}
 
+.button:hover {
+    background-color: #F13C6E;
+    color: #fff;
+    transition: 0.2s ease-out;
+}
+
+.buy-button:hover,
+.button-intro:hover,
+.shops__button:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+}
+
+section .item:hover {
+    box-shadow:
+      1px 1px #F13C6E,
+      2px 2px #F13C6E,
+      3px 3px #F13C6E,
+      4px 4px #F13C6E,
+      5px 5px #F13C6E;
+      
+    transform: translateX(-5px);
+    transition: 0.1s ease-out;
+}
 
 @media only screen and (max-width: 1800px) {
 
     section,
     footer,
-    .copyright_and_politics {
+    .copyright-and-politics {
         padding-left: 300px;
         padding-right: 300px;
     }
@@ -420,7 +513,7 @@ ul {
 
     section,
     footer,
-    .copyright_and_politics {
+    .copyright-and-politics {
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -430,7 +523,7 @@ ul {
 
     section,
     footer,
-    .copyright_and_politics {
+    .copyright-and-politics {
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -440,7 +533,7 @@ ul {
         padding-left: 100px;
     }
 
-    .button_intro {
+    .button-intro {
         margin-left: 100px;
     }
 
@@ -448,8 +541,8 @@ ul {
         margin-left: 100px;
     }
 
-    .lower_header,
-    .footer_nav {
+    .lower-header,
+    .footer-nav {
         flex-wrap: wrap;
     }
 }
@@ -458,11 +551,12 @@ ul {
 
     section,
     footer,
-    .copyright_and_politics {
+    .copyright-and-politics {
         padding-left: 10px;
         padding-right: 10px;
     }
 }
+
 @media only screen and (max-width: 560px) {
 
     h2,
@@ -470,7 +564,7 @@ ul {
         padding-left: 50px;
     }
 
-    .button_intro {
+    .button-intro {
         margin-left: 50px;
     }
 
@@ -478,8 +572,8 @@ ul {
         padding: 35px 30px;
     }
 
-    .logo_email,
-    .logo_shops {
+    .logo-email,
+    .logo-shops {
         display: none;
     }
 
@@ -491,7 +585,7 @@ ul {
         width: 200px;
     }
 
-    .contact_info {
+    .contact-info {
         flex-wrap: wrap;
     }
 
@@ -500,7 +594,7 @@ ul {
         margin-left: 10px;
     }
 
-    .flex_container,
+    .flex-container,
     .subscribe__description,
     .shops__description {
         justify-content: center;
@@ -521,5 +615,6 @@ ul {
     .input {
         margin-left: 0px;
     }
-    
 }
+
+
