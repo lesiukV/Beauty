@@ -7,10 +7,8 @@
 a {
     text-decoration: none;
     color: #828282;
-}
-
-a:visited {
-    color: #828282;
+    transition: 0.2s ease-out;
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
@@ -42,7 +40,8 @@ address {
 }
 
 .nav__link {
-    margin: 0px 15px
+    margin: 0px 15px;
+    color: #000000;
 }
 
 .lower-header {
@@ -121,6 +120,7 @@ address {
     line-height: 16px;
 
     margin-top: 21px;
+    transition: 0.2s ease-out;
 }
 
 #lower-header {
@@ -200,7 +200,7 @@ section {
 
     width: 255px;
     height: 373px;
-
+    transition: 0.1s ease-out;
 }
 
 .chair {
@@ -367,67 +367,54 @@ ul {
     color: #000000;
 }
 
-.social-networks {
+.social-network-container {
     display: flex;
 }
 
-.social-network__fb {
+.social-network__link {
     width: 45px;
     height: 45px;
     margin: 10px;
-    background: url("../pictures/fb.jpg") no-repeat;
     display: block;
-    background-size: 45px;
-
 }
 
-.social-network__fb:hover {
-    background: url("../pictures/fb-hover.jpg") no-repeat;
+#social-network__link__fb {
+    background: url("../pictures/fb.jpg");
     background-size: 45px;
 }
 
-.social-network__vk {
-    width: 45px;
-    height: 45px;
-    margin: 10px;
-    background: url("../pictures/vk.jpg") no-repeat;
-    display: block;
-    background-size: 45px;
-
-}
-
-.social-network__vk:hover {
-    background: url("../pictures/vk-hover.jpg") no-repeat;
+#social-network__link__fb:hover {
+    background: url("../pictures/fb-hover.jpg");
     background-size: 45px;
 }
 
-.social-network__yt {
-    width: 45px;
-    height: 45px;
-    margin: 10px;
-    background: url("../pictures/yt.jpg") no-repeat;
-    display: block;
-    background-size: 45px;
-
-}
-
-.social-network__yt:hover {
-    background: url("../pictures/yt-hover.jpg") no-repeat;
+#social-network__link__vk {
+    background: url("../pictures/vk.jpg");
     background-size: 45px;
 }
 
-.social-network__inst {
-    width: 45px;
-    height: 45px;
-    margin: 10px;
-    background: url("../pictures/inst.jpg") no-repeat;
-    display: block;
+#social-network__link__vk:hover {
+    background: url("../pictures/vk-hover.jpg");
     background-size: 45px;
-
 }
 
-.social-network__inst:hover {
-    background: url("../pictures/inst-hover.jpg") no-repeat;
+#social-network__link__yt {
+    background: url("../pictures/yt.jpg");
+    background-size: 45px;
+}
+
+#social-network__link__yt:hover {
+    background: url("../pictures/yt-hover.jpg");
+    background-size: 45px;
+}
+
+#social-network__link__inst {
+    background: url("../pictures/inst.jpg");
+    background-size: 45px;
+}
+
+#social-network__link__inst:hover {
+    background: url("../pictures/inst-hover.jpg");
     background-size: 45px;
 }
 
@@ -467,12 +454,18 @@ ul {
 
 a:hover {
     color: #F13C6E;
-    transition: 0.2s ease-out;
+    
 }
 
 .button:hover {
     background-color: #F13C6E;
     color: #fff;
+    
+}
+
+.buy-button,
+.button-intro,
+.shops__button {
     transition: 0.2s ease-out;
 }
 
@@ -480,7 +473,6 @@ a:hover {
 .button-intro:hover,
 .shops__button:hover {
     transform: scale(1.05);
-    transition: 0.2s ease-out;
 }
 
 section .item:hover {
@@ -492,7 +484,6 @@ section .item:hover {
       5px 5px #F13C6E;
       
     transform: translateX(-5px);
-    transition: 0.1s ease-out;
 }
 
 @media only screen and (max-width: 1800px) {
@@ -519,7 +510,7 @@ section .item:hover {
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1520px) {
 
     section,
     footer,
@@ -530,30 +521,87 @@ section .item:hover {
 
     h2,
     .description {
-        padding-left: 100px;
+        padding-left: 250px;
     }
 
     .button-intro {
-        margin-left: 100px;
+        margin-left: 250px;
     }
 
     .input {
-        margin-left: 100px;
+        margin-left: 250px;
     }
 
     .lower-header,
     .footer-nav {
         flex-wrap: wrap;
     }
+
+    #flex-container {
+        flex-wrap: nowrap;
+    }
+
+    .shops, .subscribe {
+        margin: 5px;
+    }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1320px) {
 
     section,
     footer,
     .copyright-and-politics {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    #flex-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .flex-container {
+        justify-content: center;
+    }
+    hr {
+        width: 150px;
+    }
+    footer .item {
+        width: 200px;   
+    }
+
+    h3 {
+        text-align: center;
+    }
+    h2,
+    .description {
+        padding-left: 150px;
+    }
+
+    .button-intro {
+        margin-left: 150px;
+    }
+
+    .input {
+        margin-left: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 960) {
+    .footer-nav {
+        justify-content: center;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+
+    #politicts {
+        text-align: right;
+        margin-left: 10px;
     }
 }
 
@@ -566,6 +614,10 @@ section .item:hover {
 
     .button-intro {
         margin-left: 50px;
+    }
+    #politicts {
+        text-align: right;
+        margin-left: 10px;
     }
 
     .impuls {
@@ -589,19 +641,14 @@ section .item:hover {
         flex-wrap: wrap;
     }
 
-    #politicts {
-        text-align: right;
-        margin-left: 10px;
-    }
-
     .flex-container,
     .subscribe__description,
     .shops__description {
         justify-content: center;
     }
 
-    h3 {
-        text-align: center;
+    .lower-header__call .button {
+        flex-shrink: 1;
     }
 
     section .item {
@@ -614,6 +661,28 @@ section .item:hover {
 
     .input {
         margin-left: 0px;
+    }
+
+    .shops__description, .subscribe__description {
+        margin-left: 35px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
+
+    .button {
+        width: 145px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .lower-header__call .button, .lower-header .number {
+        margin-left: 10px;
+    }
+
+    .nav__link {
+        margin: 0 7px;
     }
 }
 
