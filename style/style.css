@@ -704,7 +704,7 @@ section .item:hover {
     }
 
     .shops__description, .subscribe__description {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     .nav__link {
