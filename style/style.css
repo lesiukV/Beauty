@@ -42,15 +42,26 @@ address {
 .nav__link {
     margin: 0px 15px;
     color: #000000;
+    white-space: nowrap;
 }
 
 .lower-header {
     display: flex;
     justify-content: center;
+    flex-wrap:  wrap;
     align-items: center;
+    
 }
 
 .lower-header__logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+
+.lower-header__picture {
     width: 80px;
     height: 80px;
     margin-top: 20px;
@@ -65,12 +76,15 @@ address {
     font-weight: bold;
     margin-left: 20px;
     margin-top: 21px;
-}
+
+    font-family: 'Roboto', sans-serif;
+}   
 
 .input {
     width: 250px;
     height: 40px;
     margin-left: 172px;
+    padding: 0px 10px 0px 45px;
 
     background: #EFEFEF;
 
@@ -80,7 +94,7 @@ address {
 
     background-image: url(../pictures/search.png);
     background-repeat: no-repeat;
-    text-indent: 50px;
+    
     background-position: 20px 10px;
 }
 
@@ -104,9 +118,16 @@ address {
     margin-top: 33px;
 }
 
+.lower-header-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
 .button {
     margin-left: 40px;
-
+    flex-shrink: 1;
     width: 170px;
     height: 40px;
 
@@ -121,10 +142,6 @@ address {
 
     margin-top: 21px;
     transition: 0.2s ease-out;
-}
-
-#lower-header {
-    margin-top: 50px;
 }
 
 .lower-header__link {
@@ -262,7 +279,7 @@ section {
     border-radius: 30px;
     border: 0;
     margin: 25px 0px 35px;
-    text-indent: 20px;
+    padding: 0px 10px;
 }
 
 .shops__button {
@@ -379,42 +396,42 @@ ul {
 }
 
 #social-network__link__fb {
-    background: url("../pictures/fb.jpg");
-    background-size: 45px;
+    background: url("../pictures/fb.jpg") no-repeat;
+    background-size: 45px; 
 }
 
 #social-network__link__fb:hover {
-    background: url("../pictures/fb-hover.jpg");
+    background: url("../pictures/fb-hover.jpg") no-repeat;
     background-size: 45px;
 }
 
 #social-network__link__vk {
-    background: url("../pictures/vk.jpg");
+    background: url("../pictures/vk.jpg") no-repeat;
     background-size: 45px;
 }
 
 #social-network__link__vk:hover {
-    background: url("../pictures/vk-hover.jpg");
+    background: url("../pictures/vk-hover.jpg") no-repeat;
     background-size: 45px;
 }
 
 #social-network__link__yt {
-    background: url("../pictures/yt.jpg");
+    background: url("../pictures/yt.jpg") no-repeat;
     background-size: 45px;
 }
 
 #social-network__link__yt:hover {
-    background: url("../pictures/yt-hover.jpg");
+    background: url("../pictures/yt-hover.jpg") no-repeat;
     background-size: 45px;
 }
 
 #social-network__link__inst {
-    background: url("../pictures/inst.jpg");
+    background: url("../pictures/inst.jpg") no-repeat;
     background-size: 45px;
 }
 
 #social-network__link__inst:hover {
-    background: url("../pictures/inst-hover.jpg");
+    background: url("../pictures/inst-hover.jpg") no-repeat;
     background-size: 45px;
 }
 
@@ -423,6 +440,12 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.contact-info {
+    margin-bottom: auto;
+    align-items: baseline;
+    padding-bottom: 15px;
 }
 
 .contact-info>.number {
@@ -435,7 +458,7 @@ ul {
     padding-top: 0;
 }
 
-.copyright-and-politics {
+.copyright-and-policy {
     display: flex;
     justify-content: space-between;
 
@@ -448,8 +471,12 @@ ul {
     background: #E5E5E5;
 }
 
-.copyright-and-politics__item {
+.copyright-and-policy__item {
     padding: 25px 0px 25px 0px;
+}
+
+#policy {
+    text-align: right;
 }
 
 a:hover {
@@ -490,7 +517,7 @@ section .item:hover {
 
     section,
     footer,
-    .copyright-and-politics {
+    .copyright-and-policy {
         padding-left: 300px;
         padding-right: 300px;
     }
@@ -504,7 +531,7 @@ section .item:hover {
 
     section,
     footer,
-    .copyright-and-politics {
+    .copyright-and-policy {
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -514,7 +541,7 @@ section .item:hover {
 
     section,
     footer,
-    .copyright-and-politics {
+    .copyright-and-policy {
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -528,11 +555,7 @@ section .item:hover {
         margin-left: 250px;
     }
 
-    .input {
-        margin-left: 250px;
-    }
-
-    .lower-header,
+    .lower-header-2,
     .footer-nav {
         flex-wrap: wrap;
     }
@@ -550,7 +573,7 @@ section .item:hover {
 
     section,
     footer,
-    .copyright-and-politics {
+    .copyright-and-policy {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -565,9 +588,11 @@ section .item:hover {
     .flex-container {
         justify-content: center;
     }
+
     hr {
         width: 150px;
     }
+
     footer .item {
         width: 200px;   
     }
@@ -575,6 +600,7 @@ section .item:hover {
     h3 {
         text-align: center;
     }
+
     h2,
     .description {
         padding-left: 150px;
@@ -590,7 +616,8 @@ section .item:hover {
 
 }
 
-@media only screen and (max-width: 960) {
+@media only screen and (max-width: 960px) {
+
     .footer-nav {
         justify-content: center;
     }
@@ -599,9 +626,17 @@ section .item:hover {
         justify-content: center;
     }
 
-    #politicts {
+    #policy {
         text-align: right;
         margin-left: 10px;
+    }
+
+    .input {
+        margin-left: auto;
+    }
+
+    .lower-header__logo {
+        margin: 0px 20px;
     }
 }
 
@@ -615,8 +650,8 @@ section .item:hover {
     .button-intro {
         margin-left: 50px;
     }
-    #politicts {
-        text-align: right;
+
+    #policy {
         margin-left: 10px;
     }
 
@@ -647,6 +682,10 @@ section .item:hover {
         justify-content: center;
     }
 
+    .lower-header__logo {
+        margin-bottom: 20px ;
+    }
+
     .lower-header__call .button {
         flex-shrink: 1;
     }
@@ -660,7 +699,7 @@ section .item:hover {
     }
 
     .input {
-        margin-left: 0px;
+        margin-left: 10px;
     }
 
     .shops__description, .subscribe__description {
@@ -668,16 +707,29 @@ section .item:hover {
     }
 
     .nav__link {
-        font-size: 12px;
+        font-size: 11px;
+        margin: 0 10px;
     }
 
     .button {
         width: 145px;
     }
+
+    .social-network-container {
+        margin-bottom: 10px;
+    }
+
+    .address {
+        margin: 0px 20px;
+    }
+
+    .input {
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 360px) {
-    .lower-header__call .button, .lower-header .number {
+    .lower-header__call .button, .lower-header-2 .number {
         margin-left: 10px;
     }
 
