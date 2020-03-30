@@ -202,7 +202,7 @@ section {
 .flex-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .item-flex {
@@ -219,7 +219,9 @@ section {
     height: 373px;
     transition: 0.1s ease-out;
 
-    margin: 0px 30px;
+    margin: 0px 15px;
+    margin-bottom: 30px;
+    
 }
 
 .chair {
@@ -265,6 +267,7 @@ section {
     display: flex;
     justify-content: space-between;
 
+    margin: 0 9px;
     margin-bottom: 25px;
 }
 
@@ -328,6 +331,7 @@ h5 {
 
 #flex-container__impuls {
     background: #fff;
+    flex-wrap: wrap;
 }
 
 .impuls {
@@ -537,6 +541,10 @@ section .item:hover {
         padding-left: 200px;
         padding-right: 200px;
     }
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 1520px) {
@@ -587,9 +595,6 @@ section .item:hover {
 }
 
 @media only screen and (max-width: 1140px) {
-    .flex-container {
-        justify-content: center;
-    }
 
     hr {
         width: 150px;
@@ -678,12 +683,6 @@ section .item:hover {
         flex-wrap: wrap;
     }
 
-    .flex-container,
-    .subscribe__description,
-    .shops__description {
-        justify-content: center;
-    }
-
     .lower-header__logo {
         margin-bottom: 20px ;
     }
@@ -705,7 +704,7 @@ section .item:hover {
     }
 
     .shops__description, .subscribe__description {
-        margin-left: 35px;
+        margin-left: 100px;
     }
 
     .nav__link {
@@ -737,6 +736,10 @@ section .item:hover {
 
     .nav__link {
         margin: 0 7px;
+    }
+
+    .shops__description, .subscribe__description {
+        margin-left: 20px;
     }
 }
 
