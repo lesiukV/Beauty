@@ -201,7 +201,7 @@ section {
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -218,6 +218,8 @@ section {
     width: 255px;
     height: 373px;
     transition: 0.1s ease-out;
+
+    margin: 0px 30px;
 }
 
 .chair {
