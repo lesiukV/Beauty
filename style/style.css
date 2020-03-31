@@ -21,6 +21,8 @@ address {
     font-weight: normal;
 }
 
+/* Header */
+
 .header {
     background-color: #E5E5E5;
     color: #333333;
@@ -45,12 +47,14 @@ address {
     white-space: nowrap;
 }
 
+/* Lower Header */
+
 .lower-header {
     display: flex;
     justify-content: center;
-    flex-wrap:  wrap;
+    flex-wrap: wrap;
     align-items: center;
-    
+
 }
 
 .lower-header__logo {
@@ -58,8 +62,6 @@ address {
     flex-wrap: nowrap;
     align-items: center;
 }
-
-
 
 .lower-header__picture {
     width: 80px;
@@ -78,7 +80,7 @@ address {
     margin-top: 21px;
 
     font-family: 'Roboto', sans-serif;
-}   
+}
 
 .input {
     width: 250px;
@@ -94,7 +96,7 @@ address {
 
     background-image: url(../pictures/search.png);
     background-repeat: no-repeat;
-    
+
     background-position: 20px 10px;
 }
 
@@ -150,6 +152,8 @@ address {
     color: #000000
 }
 
+/* Intro */
+
 .intro {
     background-image: url("../pictures/intro.png");
     background-position: center center;
@@ -189,11 +193,15 @@ h2 {
     line-height: 20px;
 }
 
+/* Section */
+
 section {
     background-color: #E5E5E5;
 
     padding: 80px 400px 0px 400px;
 }
+
+/* Spacial promotion */
 
 .special-promotion-title {
     padding-bottom: 38px;
@@ -221,7 +229,7 @@ section {
 
     margin: 0px 15px;
     margin-bottom: 30px;
-    
+
 }
 
 .chair {
@@ -256,6 +264,8 @@ section {
     align-self: center;
 }
 
+/* Newsletter and Shop Map */
+
 .subscribe,
 .shops {
     display: block;
@@ -271,8 +281,9 @@ section {
     margin-bottom: 25px;
 }
 
-#flex-container {
+#flex-container__subscribe__shops {
     margin: 100px 0px;
+    flex-wrap: nowrap;
 }
 
 .subscribe__email {
@@ -329,6 +340,8 @@ h5 {
     margin: 56px 45.33px 56px 0px;
 }
 
+/* Companies */
+
 #flex-container__impuls {
     background: #fff;
     flex-wrap: wrap;
@@ -340,6 +353,8 @@ h5 {
     padding: 35px 60px;
 }
 
+/* Watched Recently */
+
 #watched-recently {
     margin-top: 80px;
 }
@@ -347,6 +362,8 @@ h5 {
 #watched-recently__container {
     padding-bottom: 80px;
 }
+
+/* Footer */
 
 footer {
     background: #fff;
@@ -403,7 +420,7 @@ ul {
 
 #social-network__link__fb {
     background: url("../pictures/fb.jpg") no-repeat;
-    background-size: 45px; 
+    background-size: 45px;
 }
 
 #social-network__link__fb:hover {
@@ -464,6 +481,8 @@ ul {
     padding-top: 0;
 }
 
+/* Additional Information */
+
 .copyright-and-policy {
     display: flex;
     justify-content: space-between;
@@ -485,15 +504,15 @@ ul {
     text-align: right;
 }
 
+/* Animations */
+
 a:hover {
     color: #F13C6E;
-    
 }
 
 .button:hover {
     background-color: #F13C6E;
     color: #fff;
-    
 }
 
 .buy-button,
@@ -510,14 +529,16 @@ a:hover {
 
 section .item:hover {
     box-shadow:
-      1px 1px #F13C6E,
-      2px 2px #F13C6E,
-      3px 3px #F13C6E,
-      4px 4px #F13C6E,
-      5px 5px #F13C6E;
-      
+        1px 1px #F13C6E,
+        2px 2px #F13C6E,
+        3px 3px #F13C6E,
+        4px 4px #F13C6E,
+        5px 5px #F13C6E;
+
     transform: translateX(-5px);
 }
+
+/* Responsive Media Queries */
 
 @media only screen and (max-width: 1800px) {
 
@@ -570,11 +591,8 @@ section .item:hover {
         flex-wrap: wrap;
     }
 
-    #flex-container {
-        flex-wrap: nowrap;
-    }
-
-    .shops, .subscribe {
+    .shops,
+    .subscribe {
         margin: 5px;
     }
 }
@@ -587,11 +605,6 @@ section .item:hover {
         padding-left: 10px;
         padding-right: 10px;
     }
-
-    #flex-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 
 @media only screen and (max-width: 1140px) {
@@ -601,7 +614,7 @@ section .item:hover {
     }
 
     footer .item {
-        width: 200px;   
+        width: 200px;
     }
 
     h3 {
@@ -621,6 +634,9 @@ section .item:hover {
         margin-left: 150px;
     }
 
+    #flex-container__subscribe__shops {
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 960px) {
@@ -628,7 +644,7 @@ section .item:hover {
     .footer-nav {
         justify-content: center;
     }
-    
+
     .contact-info {
         justify-content: center;
     }
@@ -684,7 +700,7 @@ section .item:hover {
     }
 
     .lower-header__logo {
-        margin-bottom: 20px ;
+        margin-bottom: 20px;
     }
 
     .lower-header__call .button {
@@ -703,7 +719,8 @@ section .item:hover {
         margin-left: 10px;
     }
 
-    .shops__description, .subscribe__description {
+    .shops__description,
+    .subscribe__description {
         margin-left: 50px;
     }
 
@@ -730,7 +747,9 @@ section .item:hover {
 }
 
 @media only screen and (max-width: 360px) {
-    .lower-header__call .button, .lower-header-2 .number {
+
+    .lower-header__call .button,
+    .lower-header-2 .number {
         margin-left: 10px;
     }
 
@@ -738,9 +757,8 @@ section .item:hover {
         margin: 0 7px;
     }
 
-    .shops__description, .subscribe__description {
+    .shops__description,
+    .subscribe__description {
         margin-left: 20px;
     }
 }
-
-
