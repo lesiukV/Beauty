@@ -82,7 +82,7 @@ address {
     font-family: 'Roboto', sans-serif;
 }
 
-.input {
+input.input {
     width: 250px;
     height: 40px;
     margin-left: 172px;
@@ -94,7 +94,7 @@ address {
     margin-top: 21px;
     border: 0px;
 
-    background-image: url(../pictures/search.png);
+    background-image: url("../pictures/search.png");
     background-repeat: no-repeat;
 
     background-position: 20px 10px;
@@ -226,7 +226,7 @@ section {
 
     background-color: #fff;
 
-    width: 255px;
+    min-width: 255px;
     height: 373px;
     transition: 0.1s ease-out;
 
@@ -272,7 +272,7 @@ button.buy-button {
 .newsletter,
 .shops {
     display: block;
-    width: 540px;
+    min-width: 540px;
     height: 212px;
 
     background-color: #F13C6E;
@@ -280,7 +280,7 @@ button.buy-button {
     display: flex;
     justify-content: space-between;
 
-    margin: 0 9px;
+    margin: 0 15px;
     margin-bottom: 25px;
 }
 
@@ -425,11 +425,13 @@ ul {
 #social-network__link__fb {
     background: url("../pictures/fb.png") no-repeat;
     background-size: 45px;
+    margin-left: 0px;
 }
 
 #social-network__link__fb:hover {
     background: url("../pictures/fb-hover.png") no-repeat;
     background-size: 45px;
+    margin-left: 0px;
 }
 
 #social-network__link__vk {
@@ -455,11 +457,13 @@ ul {
 #social-network__link__inst {
     background: url("../pictures/inst.png") no-repeat;
     background-size: 45px;
+    margin-right: 0px;
 }
 
 #social-network__link__inst:hover {
     background: url("../pictures/inst-hover.png") no-repeat;
     background-size: 45px;
+    margin-right: 0px;
 }
 
 .footer-nav,
@@ -552,10 +556,6 @@ section .item:hover {
         padding-left: 300px;
         padding-right: 300px;
     }
-
-    .item {
-        margin: 10px;
-    }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -565,10 +565,6 @@ section .item:hover {
     .copyright-and-policy {
         padding-left: 200px;
         padding-right: 200px;
-    }
-
-    .flex-container {
-        flex-wrap: wrap;
     }
 }
 
@@ -597,7 +593,11 @@ section .item:hover {
 
     .shops,
     .newsletter {
-        margin: 5px;
+        margin: 10px;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
     }
 }
 
@@ -634,7 +634,7 @@ section .item:hover {
         margin-left: 150px;
     }
 
-    .input {
+    input.input {
         margin-left: 150px;
     }
 
@@ -658,7 +658,7 @@ section .item:hover {
         margin-left: 10px;
     }
 
-    .input {
+    input.input {
         margin-left: auto;
     }
 
@@ -674,7 +674,7 @@ section .item:hover {
         padding-left: 50px;
     }
 
-    .button-intro {
+    button.button-intro {
         margin-left: 50px;
     }
 
@@ -707,7 +707,7 @@ section .item:hover {
         margin-bottom: 20px;
     }
 
-    .second-header__call .button {
+    .second-header__call button.button {
         flex-shrink: 1;
     }
 
@@ -725,7 +725,7 @@ section .item:hover {
         margin: 0 10px;
     }
 
-    .button {
+    button.button {
         width: 145px;
     }
 
@@ -737,11 +737,12 @@ section .item:hover {
         margin: 0px 20px;
     }
 
-    .input {
+    input.input {
         margin: auto;
     }
 
-    .number, button.button {
+    .number,
+    button.button {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -756,6 +757,16 @@ section .item:hover {
 
     .copyright-and-policy__item {
         font-size: 10px;
+    }
+
+    .newsletter,
+    .shops {
+        min-width: 290px;
+        width: 512px;
+    }
+
+    .item {
+        min-width: 200px;
     }
 }
 
@@ -774,5 +785,6 @@ section .item:hover {
     .newsletter__description {
         margin-left: 20px;
         white-space: normal;
+        font-size: 13px;
     }
 }
