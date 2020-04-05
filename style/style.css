@@ -82,7 +82,7 @@ address {
     font-family: 'Roboto', sans-serif;
 }
 
-input.input {
+.input {
     width: 250px;
     height: 40px;
     margin-left: 172px;
@@ -129,7 +129,7 @@ input.input {
     margin-top: 50px;
 }
 
-button.button {
+.button {
     margin-left: 40px;
     flex-shrink: 1;
     width: 170px;
@@ -162,7 +162,7 @@ button.button {
     background-size: cover;
 }
 
-button.button-intro {
+.button-intro {
     width: 170px;
     height: 40px;
     margin-left: 400px;
@@ -226,13 +226,16 @@ section {
 
     background-color: #fff;
 
-    min-width: 255px;
+    width: 255px;
     height: 373px;
     transition: 0.1s ease-out;
 
     margin: 0px 15px;
     margin-bottom: 30px;
+}
 
+section .item {
+    min-width: 255px;
 }
 
 .chair {
@@ -241,7 +244,7 @@ section {
     max-width: 125px;
 }
 
-button.buy-button {
+.buy-button {
     align-self: center;
     width: 130px;
     height: 35px;
@@ -289,7 +292,7 @@ button.buy-button {
     flex-wrap: nowrap;
 }
 
-.newsletter__email {
+.newsletter__input {
     width: 225px;
     height: 35px;
 
@@ -301,7 +304,7 @@ button.buy-button {
     padding: 0px 25px;
 }
 
-button.shops__button {
+.shops__button {
     width: 170px;
     height: 35px;
 
@@ -484,7 +487,7 @@ ul {
     padding-top: 0;
 }
 
-.contact-info>button.button {
+.contact-info>.button {
     margin-top: 0;
     padding-top: 0;
 }
@@ -518,20 +521,20 @@ a:hover {
     color: #F13C6E;
 }
 
-button.button:hover {
+.button:hover {
     background-color: #F13C6E;
     color: #fff;
 }
 
-button.buy-button,
-button.button-intro,
-button.shops__button {
+.buy-button,
+.button-intro,
+.shops__button {
     transition: 0.2s ease-out;
 }
 
-button.buy-button:hover,
-button.button-intro:hover,
-button.shops__button:hover {
+.buy-button:hover,
+.button-intro:hover,
+.shops__button:hover {
     transform: scale(1.05);
 }
 
@@ -582,7 +585,7 @@ section .item:hover {
         padding-left: 250px;
     }
 
-    button.button-intro {
+    .button-intro {
         margin-left: 250px;
     }
 
@@ -630,11 +633,11 @@ section .item:hover {
         padding-left: 150px;
     }
 
-    button.button-intro {
+    .button-intro {
         margin-left: 150px;
     }
 
-    input.input {
+    .input {
         margin-left: 150px;
     }
 
@@ -658,12 +661,17 @@ section .item:hover {
         margin-left: 10px;
     }
 
-    input.input {
+    .input {
         margin-left: auto;
     }
 
     .second-header__logo {
         margin: 0px 20px;
+    }
+    
+    section .item {
+        min-width: 200px;
+        width: 255px;
     }
 }
 
@@ -674,7 +682,7 @@ section .item:hover {
         padding-left: 50px;
     }
 
-    button.button-intro {
+    .button-intro {
         margin-left: 50px;
     }
 
@@ -707,7 +715,7 @@ section .item:hover {
         margin-bottom: 20px;
     }
 
-    .second-header__call button.button {
+    .second-header__call .button {
         flex-shrink: 1;
     }
 
@@ -725,7 +733,7 @@ section .item:hover {
         margin: 0 10px;
     }
 
-    button.button {
+    .button {
         width: 145px;
     }
 
@@ -737,12 +745,12 @@ section .item:hover {
         margin: 0px 20px;
     }
 
-    input.input {
+    .input {
         margin: auto;
     }
 
     .number,
-    button.button {
+    .button {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -764,15 +772,11 @@ section .item:hover {
         min-width: 290px;
         width: 512px;
     }
-
-    .item {
-        min-width: 200px;
-    }
 }
 
 @media only screen and (max-width: 360px) {
 
-    .second-header__call button.button,
+    .second-header__call .button,
     .third-header .number {
         margin-left: 10px;
     }
