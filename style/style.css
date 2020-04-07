@@ -160,7 +160,9 @@ address {
 }
 
 h2 {
-    padding: 192px 0px 50px 400px;
+    padding-top: 192px;
+    margin-bottom: 40px;
+    margin-left: 400px;
     font-weight: bold;
     font-size: 48px;
     line-height: 56px;
@@ -169,10 +171,11 @@ h2 {
 
 .description {
     color: #FFFFFF;
-    padding-left: 400px;
+    margin-left: 400px;
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 20px;
+    max-width: 350px;
 }
 
 /* Section */
@@ -504,6 +507,15 @@ section .item:hover {
     transform: translateX(-5px);
 }
 
+button:active, .button:active {
+    background-color: rgb(219, 57, 103);
+    color: rgba(255, 255, 255, 0.904)
+}
+
+a:active {
+    color: rgb(219, 57, 103);
+}
+
 /* Responsive Media Queries */
 
 @media only screen and (max-width: 1800px) {
@@ -537,7 +549,7 @@ section .item:hover {
 
     h2,
     .description {
-        padding-left: 250px;
+        margin-left: 250px;
     }
 
     .button-intro {
@@ -585,7 +597,7 @@ section .item:hover {
 
     h2,
     .description {
-        padding-left: 150px;
+        margin-left: 150px;
     }
 
     .button-intro {
@@ -623,7 +635,7 @@ section .item:hover {
     .second-header__logo {
         margin: 0px 20px;
     }
-    
+
     section .item {
         min-width: 200px;
         width: 255px;
@@ -634,7 +646,7 @@ section .item:hover {
 
     h2,
     .description {
-        padding-left: 50px;
+        margin-left: 50px;
     }
 
     .button-intro {
@@ -726,6 +738,17 @@ section .item:hover {
     .shops {
         min-width: 290px;
         width: 512px;
+    }
+
+    span {
+        padding: 3px 0;
+        line-height: 1.45;
+        background: rgba(241, 60, 110, .6);
+        box-shadow: 10px 0 rgba(241, 60, 110, .6), -10px 0 rgba(241, 60, 110, .6);
+    }
+
+    .button-intro {
+        margin-left: 40px;
     }
 }
 
