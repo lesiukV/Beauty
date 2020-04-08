@@ -63,6 +63,7 @@ address {
     width: 80px;
     height: 80px;
     margin-top: 20px;
+    transition: 0.2s;
 }
 
 .second-header__beauty {
@@ -148,7 +149,6 @@ address {
 .button-intro {
     width: 170px;
     height: 40px;
-    margin-left: 400px;
     margin-bottom: 173px;
     background: #F13C6E;
     border: 2px solid #fff;
@@ -158,10 +158,9 @@ address {
 
 }
 
-h2 {
+.intro__title {
     padding-top: 192px;
     margin-bottom: 40px;
-    margin-left: 400px;
     font-weight: bold;
     font-size: 48px;
     line-height: 56px;
@@ -170,7 +169,6 @@ h2 {
 
 .description {
     color: #FFFFFF;
-    margin-left: 400px;
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 20px;
@@ -181,10 +179,16 @@ h2 {
 
 section {
     background-color: #E5E5E5;
-    padding: 80px 400px 0px 400px;
+    padding-top: 80px;
 }
 
-/* Spacial Promotion */
+/* Special Promotion */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+}
 
 .special-promotion-title {
     padding-bottom: 38px;
@@ -339,7 +343,6 @@ h5 {
 
 footer {
     background: #fff;
-    padding: 0px 400px;
 }
 
 hr {
@@ -420,13 +423,13 @@ ul {
 #social-network__link__inst {
     background: url("../pictures/inst.png") no-repeat;
     background-size: 45px;
-    margin-right: 0px;
+    margin-right: 10px;
 }
 
 #social-network__link__inst:hover {
     background: url("../pictures/inst-hover.png") no-repeat;
     background-size: 45px;
-    margin-right: 0px;
+    margin-right: 10px;
 }
 
 .footer-nav,
@@ -454,10 +457,13 @@ ul {
 
 /* Additional Information */
 
+.additional-information {
+    background: #E5E5E5;
+}
+
 .copyright-and-policy {
     display: flex;
     justify-content: space-between;
-    padding: 0px 400px 0px 400px;
     margin-top: 25px;
     font-size: 12px;
     line-height: 14px;
@@ -473,7 +479,7 @@ ul {
     text-align: right;
 }
 
-/* Animations */
+/* Animations/Design */
 
 a:hover {
     color: #F13C6E;
@@ -506,7 +512,8 @@ section .item:hover {
     transform: translateX(-5px);
 }
 
-button:active, .button:active {
+button:active,
+.button:active {
     background-color: rgb(219, 57, 103);
     color: rgba(255, 255, 255, 0.904)
 }
@@ -515,54 +522,27 @@ a:active {
     color: rgb(219, 57, 103);
 }
 
+.buy-button,
+.button,
+.social-network__link,
+.button-intro,
+.shops__button,
+#policy {
+    cursor: pointer;
+}
+
+.second-header__picture:hover {
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
 /* Responsive Media Queries */
 
-@media only screen and (max-width: 1800px) {
-
-    section,
-    footer,
-    .copyright-and-policy {
-        padding-left: 300px;
-        padding-right: 300px;
-    }
-}
-
-@media only screen and (max-width: 1600px) {
-
-    section,
-    footer,
-    .copyright-and-policy {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-}
-
 @media only screen and (max-width: 1520px) {
-
-    section,
-    footer,
-    .copyright-and-policy {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    h2,
-    .description {
-        margin-left: 250px;
-    }
-
-    .button-intro {
-        margin-left: 250px;
-    }
 
     .third-header,
     .footer-nav {
         flex-wrap: wrap;
-    }
-
-    .shops,
-    .newsletter {
-        margin: 10px;
     }
 }
 
@@ -576,7 +556,7 @@ a:active {
     }
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1142px) {
 
     .flex-container {
         flex-wrap: wrap;
@@ -594,11 +574,8 @@ a:active {
         text-align: center;
     }
 
-    h2,
-    .description {
-        margin-left: 150px;
-    }
-
+    .intro__title,
+    .description,
     .button-intro {
         margin-left: 150px;
     }
@@ -610,9 +587,33 @@ a:active {
     #flex-container__newsletter__shops {
         flex-wrap: wrap;
     }
+
+    .shops, .newsletter {
+        min-width: 400px;
+    }
+
+    .logo-email, .logo-shops {
+        display: none;
+    }
+
+    section .item:last-child {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 960px) {
+
+    .shops, .newsletter {
+        min-width: 540px;
+    }
+
+    section .item:last-child {
+        display: block;
+    }
+
+    .logo-email, .logo-shops {
+        display: block;
+    }
 
     .footer-nav {
         justify-content: center;
@@ -639,11 +640,48 @@ a:active {
         min-width: 200px;
         width: 255px;
     }
+
+    .intro__title,
+    .description {
+        margin-left: 150px;
+    }
+    .button-intro {
+        margin-left: 139px;
+    }
+
+    span {
+        padding: 3px 0;
+        line-height: 1.45;
+        background: rgba(241, 60, 110, .6);
+        box-shadow: 10px 0 rgba(241, 60, 110, .6), -10px 0 rgba(241, 60, 110, .6);
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    
+    section .item {
+        flex-grow: 1;
+    }
 }
 
 @media only screen and (max-width: 560px) {
 
-    h2,
+    .second-header__picture {
+        display: none;
+    }
+
+    .intro__title,
+    .description,
+    .button-intro {
+        margin-left: 20px;
+    }
+
+    .second-header__beauty {
+        font-size: 40px;
+        margin-left: 0px;
+    }
+
+    .intro__title,
     .description {
         margin-left: 50px;
     }
@@ -685,10 +723,6 @@ a:active {
         flex-shrink: 1;
     }
 
-    section .item {
-        flex-grow: 1;
-    }
-
     .shops__description,
     .newsletter__description {
         margin-left: 40px;
@@ -721,7 +755,7 @@ a:active {
         margin-right: 10px;
     }
 
-    h2 {
+    .intro__title {
         font-size: 45px;
     }
 
@@ -737,13 +771,6 @@ a:active {
     .shops {
         min-width: 290px;
         width: 512px;
-    }
-
-    span {
-        padding: 3px 0;
-        line-height: 1.45;
-        background: rgba(241, 60, 110, .6);
-        box-shadow: 10px 0 rgba(241, 60, 110, .6), -10px 0 rgba(241, 60, 110, .6);
     }
 
     .button-intro {
@@ -767,5 +794,9 @@ a:active {
         margin-left: 20px;
         white-space: normal;
         font-size: 13px;
+    }
+
+    .additional-information {
+        display: none;
     }
 }
