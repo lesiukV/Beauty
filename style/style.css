@@ -375,6 +375,8 @@ ul {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social-network-container {
@@ -423,13 +425,13 @@ ul {
 #social-network__link__inst {
     background: url("../pictures/inst.png") no-repeat;
     background-size: 45px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 #social-network__link__inst:hover {
     background: url("../pictures/inst-hover.png") no-repeat;
     background-size: 45px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .footer-nav,
@@ -589,7 +591,7 @@ a:active {
     }
 
     .shops, .newsletter {
-        min-width: 400px;
+        min-width: 395px;
     }
 
     .logo-email, .logo-shops {
@@ -598,22 +600,18 @@ a:active {
 
     section .item:last-child {
         display: none;
+    }
+
+    .second-header .number{
+        padding-left: 47px;
+        padding-right: 47px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
+
 @media only screen and (max-width: 960px) {
-
-    .shops, .newsletter {
-        min-width: 540px;
-    }
-
-    section .item:last-child {
-        display: block;
-    }
-
-    .logo-email, .logo-shops {
-        display: block;
-    }
 
     .footer-nav {
         justify-content: center;
@@ -654,6 +652,20 @@ a:active {
         line-height: 1.45;
         background: rgba(241, 60, 110, .6);
         box-shadow: 10px 0 rgba(241, 60, 110, .6), -10px 0 rgba(241, 60, 110, .6);
+    }
+}
+
+@media only screen and (max-width: 892px) {
+    .shops, .newsletter {
+        min-width: 540px;
+    }
+
+    section .item:last-child {
+        display: block;
+    }
+
+    .logo-email, .logo-shops {
+        display: block;
     }
 }
 
@@ -749,10 +761,18 @@ a:active {
         margin: auto;
     }
 
+    .second-header .number{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .number,
     .button {
         margin-left: 10px;
         margin-right: 10px;
+        padding: 0px;
     }
 
     .intro__title {
