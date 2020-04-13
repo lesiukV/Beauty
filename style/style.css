@@ -21,6 +21,14 @@ address {
     font-weight: normal;
 }
 
+/* Content Width Container */ 
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+}
+
 /* Header */
 
 .header {
@@ -155,7 +163,6 @@ address {
     color: #fff;
     box-sizing: border-box;
     border-radius: 40px;
-
 }
 
 .intro__title {
@@ -183,12 +190,6 @@ section {
 }
 
 /* Special Promotion */
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1110px;
-}
 
 .special-promotion-title {
     padding-bottom: 38px;
@@ -248,7 +249,7 @@ section .item {
     align-self: center;
 }
 
-/* Newsletter and Shop Map */
+/* Newsletter and Shops Map */
 
 .newsletter,
 .shops {
@@ -287,7 +288,6 @@ section .item {
     border-radius: 30px;
     margin: 25px 0px 35px;
 }
-
 
 .newsletter__description,
 .shops__description {
@@ -345,6 +345,8 @@ footer {
     background: #fff;
 }
 
+/* List of popular categories */
+
 hr {
     margin-bottom: 30px;
     width: 255px;
@@ -389,6 +391,8 @@ ul {
     margin: 10px;
     display: block;
 }
+
+/* Change color of social network image on hover */
 
 #social-network__link__fb {
     background: url("../pictures/fb.png") no-repeat;
@@ -504,6 +508,8 @@ a:hover {
     transform: scale(1.05);
 }
 
+/* Box shadow for items in section */
+
 section .item:hover {
     box-shadow:
         1px 1px #F13C6E,
@@ -532,6 +538,8 @@ a:active {
 #policy {
     cursor: pointer;
 }
+
+/* Rotate header logo on hover */
 
 .second-header__picture:hover {
     transform: rotate(45deg);
@@ -590,26 +598,29 @@ a:active {
         flex-wrap: wrap;
     }
 
-    .shops, .newsletter {
+    .shops,
+    .newsletter {
         min-width: 395px;
     }
 
-    .logo-email, .logo-shops {
+    .logo-email,
+    .logo-shops {
         display: none;
     }
 
-    section .item:last-child {
+     /* Display 3 items on ipad pro resolution */
+
+    .item:last-child {
         display: none;
     }
 
-    .second-header .number{
+    .second-header .number {
         padding-left: 47px;
         padding-right: 47px;
         margin-left: 0px;
         margin-right: 0px;
     }
 }
-
 
 @media only screen and (max-width: 960px) {
 
@@ -643,11 +654,14 @@ a:active {
     .description {
         margin-left: 150px;
     }
+
     .button-intro {
         margin-left: 139px;
     }
 
-    span {
+    /* Highlights intro title and intro descripton */
+
+    span {  
         padding: 3px 0;
         line-height: 1.45;
         background: rgba(241, 60, 110, .6);
@@ -656,25 +670,32 @@ a:active {
 }
 
 @media only screen and (max-width: 892px) {
-    .shops, .newsletter {
+
+    .shops,
+    .newsletter {
         min-width: 540px;
     }
 
-    section .item:last-child {
+    .item:last-child {
         display: block;
     }
 
-    .logo-email, .logo-shops {
+    .logo-email,
+    .logo-shops {
         display: block;
     }
 }
 
+/* Increase item width */
+
 @media only screen and (max-width: 590px) {
-    
+
     section .item {
         flex-grow: 1;
     }
 }
+
+/* Media query for responsibility on the most popular resolution of mobile devices */
 
 @media only screen and (max-width: 560px) {
 
@@ -761,7 +782,7 @@ a:active {
         margin: auto;
     }
 
-    .second-header .number{
+    .second-header .number {
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 10px;
@@ -797,6 +818,8 @@ a:active {
         margin-left: 40px;
     }
 }
+
+/* Media query for responsibility on low res screens like iPhone 4 screen */
 
 @media only screen and (max-width: 360px) {
 
